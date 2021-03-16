@@ -26,7 +26,7 @@
   <groupId>com.peterphi.thymeleaf</groupId>
   <artifactId>thymeleaf</artifactId>
   <packaging>jar</packaging>
-  <version>3.0.12</version>
+  <version>3.0.13-SNAPSHOT</version>
   <name>thymeleaf</name>
   <url>http://www.thymeleaf.org</url>
 
