@@ -324,9 +324,8 @@ public final class OGNLVariableExpressionEvaluator
 
         // We create the OgnlContext here instead of just sending the Map as context because that prevents OGNL from
         // creating the OgnlContext empty and then setting the context Map variables one by one
-        final OgnlContext ognlContext = new OgnlContext(context);
+        final OgnlContext ognlContext = new OgnlContext(new OGNLPublicMemberAccess(), null, null, context);
         return ognl.Ognl.getValue(parsedExpression, ognlContext, root);
-
     }
 
 
